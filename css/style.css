@@ -1,0 +1,50 @@
+*{
+    box-sizing:border-box; /*позволяет правильно считать ширину и высоту и элемента! оч важно!*/
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: #635854;
+    padding-top: 12px; /*задаем отступ сверху в списке*/
+    padding-bottom: 12px; /*задаем отступ снизу в списке*/
+    border-bottom: 4px solid #3596F5; /*задаем нижнюю границу шапки*/
+}
+.navbar{
+max-width:1280px;/*максимальная ширина блока*/
+margin: auto;/*добавляем автоматические отступы по краям блока*/
+display: flex;/*ставим элементы в строчку, сделали блок гибким*/
+justify-content: space-between;/*расставили элементы по краям*/
+align-items: center;/*выравниваем по вертикали относительно друг друга по центру*/
+}
+.navbar-menu{
+    margin: 0%; /*отключаем внешние отступы*/
+    padding: 0%;/*отключаем внутренние отступы*/
+    list-style: none; /*отключаем точки у списка*/
+    display: flex;/*ставим элементы в строчку, сделали блок гибким*/
+    text-align: center; /*располагаем их по центру*/
+}
+.navbar-item{
+    margin-left: 40px; /*задаем отступ слева в списке*/
+    margin-right: 40px; /*задаем отступ справа в списке*/
+}
+.navbar-link{
+    text-decoration: none; /*убираем подчеркивание*/
+    color: white;
+}
+.navbar-contacts{
+    text-align: right; /*весь текст выравниваем по правому краю*/
+}
+.navbar-text{
+    display: block; /*указываем, что элемент является блоком и занимает всю строчку*/
+    color: #fff;
+    margin-bottom: 4px; /*отталкиваем строку с номером на 4 px*/
+}
+.navbar-phone{
+    font-weight: 700; /*жирный шрифт*/
+    font-size: 17px;
+    line-height: 20px; /*межбуквенный интервал*/
+    text-decoration: none;
+    color:white;
+
+}
